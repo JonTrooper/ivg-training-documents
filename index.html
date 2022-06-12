@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta property="og:title" content="Shock Army — Speciality Squad Placement">
+        <meta property="og:description" content="A simple questionnaire that determines which speciality squad you belong in within the Shock Army.">
+        <meta property="og:image" content="https://i.imgur.com/Jhs6ObC.png">
+        <link href="https://fonts.googleapis.com/css2?family=Koulen&family=Roboto:wght@500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+        <style type="text/css">
+            body{
+                background-color: #1e1f22;
+                background-image: url("https://i.imgur.com/rxueGpJ.png");
+                background-repeat: no-repeat;
+                background-position-y: center;
+                background-attachment: fixed;
+                color: white;
+                font-family: 'Inter', sans-serif;
+            }
+            .vignette {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                box-shadow: 0 0 200px rgba(0,0,0,0.85) inset;
+                z-index: -1;
+            }
+            #startTitle{
+                width: 435px;
+                margin:auto;
+                padding-top: 30px;
+            }
+            .layout {
+                width: 90%;
+                display: flex;
+                gap: 10px;
+                justify-content: space-evenly;
+                padding-top: 30px;
+                margin:auto;
+                text-shadow: 1px 1px 2px #000000;
+            }
+            .grow1 {
+                flex-grow: 1;
+                text-align: center;
+            }
+            .licenseType{
+                padding-top: 5px;
+                font-weight: bold;
+                font-size: 1.1em;
+            }
+            #message{
+                opacity: 80%;
+                margin-top:20px;
+                text-align: center;
+                text-shadow: 1px 1px 2px #000000;
+            }
+            img{border-radius: 4px;}
+            #medical{opacity: 60%;transition: .5s ease;}
+            #heavy{opacity: 60%;transition: .5s ease;}
+            #drivers{opacity: 60%;transition: .5s ease;}
+            #snipers{opacity: 60%;transition: .5s ease;}
+            #medical:hover{opacity: 100%;}
+            #heavy:hover{opacity: 100%;}
+            #drivers:hover{opacity: 100%;}
+            #snipers:hover{opacity: 100%;}
+            #signature{
+                padding-top: 30px;
+                width: 350px;
+                margin:auto;
+            }
+            a:link {
+                color: white;
+                text-decoration: none;
+            }
+            a:visited {
+                color: white;
+                text-decoration: none;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="vignette"></div>
+        <div id="startTitle">
+            <img src="https://i.imgur.com/ycyoBF5.png">
+        </div>
+        <div id="message">
+            The following documents are for the <span style="color:rgb(255, 221, 137)">Commissioned Officers of Iron Vanguard</span> only.<br>
+            You are to follow the instructions on each document pertaining to your type of license training.<br>
+            <br>
+            <span style="color:#cf5e62;font-weight: bold;">
+            If a Commissioned Officer is caught handing out licenses without proper briefing of the training documents<br>
+            A severe regimental infraction response can be expected.
+            </span>
+        </div>
+        <section class="layout">
+            <div class="grow1">
+                <div id="medical">
+                    <a href="https://drive.google.com/file/d/16Y1vA3SDuI4uNMBdyDWfcNVgm775f_Tu/view" target="_blank" rel="noopener noreferrer">
+                    <img src="https://i.imgur.com/lPf2kDF.jpg" style="width:300px;">
+                    <div class="licenseType">Medical License</div>
+                    </a>
+                </div>
+            </div>
+            <div class="grow1">
+                <div id="heavy">
+                    <a href="https://drive.google.com/file/d/1M_1yeZRvuyJRxIkL-ZBtTEbtC3JIQVlU/view" target="_blank" rel="noopener noreferrer">
+                    <img src="https://i.imgur.com/JQuQ4Su.jpg" style="width:300px;">
+                    <div class="licenseType">Heavy Weapons License</div>
+                    </a>
+                </div>
+            </div>
+            <div class="grow1">
+                <div id="drivers">
+                    <a href="https://drive.google.com/file/d/1ZFNC9S-N2LOzhA8NG0d2H3fJNqsV6fJJ/view" target="_blank" rel="noopener noreferrer">
+                    <img src="https://i.imgur.com/wuRxtDs.jpg" style="width:300px;">
+                    <div class="licenseType">Drivers License</div>
+                    </a>
+                </div>
+            </div>
+            <div class="grow1">
+                <div id="snipers">
+                    <img src="https://i.imgur.com/lXr3t2P.png" style="width:300px;">
+                    <div class="licenseType">Snipers License</div>
+                </div>
+            </div>
+          </section>
+          <div id="message">
+              <br>
+              Once the license training is complete, you are obligated to log the training on this form below:<br>
+              <br>
+              <a style="color:rgb(255, 221, 137);font-weight: bold;" href="https://docs.google.com/forms/d/e/1FAIpQLSekCsL9BJY_FcQcCAJxp4yS8VdttIvSkcnZMxDMRLVVnFlDaA/viewform" target="_blank" rel="noopener noreferrer">
+                License Training Form
+              </a>
+          </div>
+          <div id="signature">
+            <img src="https://i.imgur.com/AV97w7J.png" style="width: 350px;">
+          </div>
+    </body>
+</html>
